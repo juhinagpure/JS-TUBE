@@ -13,7 +13,6 @@ const symbols = {
 
 for(const n in symbols) {
     console.log(`key is ${n} and value is: ${symbols[n]}`);
-
 }
 
 
