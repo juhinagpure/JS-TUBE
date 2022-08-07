@@ -1,17 +1,15 @@
-import User from "./06 classjs";
+// import User from "./06classjs";
 
-// const User = require("./06 classjs.js");
+const User = require("./06classjs.js");
 
+const hitesh = new User("hitesh", "hitesh@lco.dev");
 
-const juhi = new User("juhi", "juhinagpure143@gmail.com")
+console.log(hitesh.getInfo());
+hitesh.enrollCourse("React Bootcamp");
+hitesh.enrollCourse("Angular Bootcamp");
 
-console.log(juhi.getInfo());
-juhi.enrollCourse("React Bootcamp");
-juhi.enrollCourse("Angular Bootcamp");
+console.log(hitesh.getCourseList());
 
-console.log(juhi.getCourseList());
+let courses = hitesh.getCourseList();
 
-let courses = juhi.getCourseList()
-
-
-courses.forEach(c => console.log(c));
+courses.forEach((c) => console.log(c));
